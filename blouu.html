@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="blouu.css">
+</head>
+<body>
+    <video autoplay muted loop class="bg-video">
+        <source src="videoplayback.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video>
+
+    <h1>Bluetooth</h1>
+
+    <h2>
+        <h1>¿Qué es Bluetooth?</h1>
+<h2>Bluetooth es una tecnología de comunicación
+inalámbrica que permite la transferencia de datos
+entre dispositivos electrónicos a corta distancia.
+*Historia de Bluetooth*
+- 1994: Ericsson desarrolla la primera versión de
+Bluetooth.
+- 1998: Se crea el consorcio Bluetooth Special Interest
+Group (SIG) para promover el estándar.
+- 2000: Se lanza la primera versión de Bluetooth (1.0).
+- 2004: Se lanza Bluetooth 2.0, con velocidades más
+rápidas.
+- 2010: Se lanza Bluetooth 4.0, con bajo consumo de
+energía.
+- 2016: Se lanza Bluetooth 5.0, con velocidades más
+rápidas y mayor alcance.</h2>
+<h1>Dispositivos compatibles</h1>
+<h2>- Teléfonos inteligentes
+- Computadoras portátiles
+- Tabletas
+- Auriculares
+- Altavoces
+- Impresoras
+- Cámaras</h2>
+<h1>Ventajas de Bluetooth</h1>
+<h2>- Conectividad inalámbrica
+- Facilidad de uso
+- Bajo costo
+- Consumo de energía bajo</h2>
+<h1>Desventajas de Bluetooth</h1>
+<h2>- Interferencia de señal
+- Seguridad limitada
+- Velocidad variable
+- Alcance limitado</h2>
+<h1>Aplicaciones de Bluetooth</h1>
+<h2>- Conectividad de audio
+- Transferencia de archivos
+- Control remoto
+- Monitoreo de salud
+- IoT (Internet de las cosas)
+</h2>
+    </h2>
+
+    <marquee behavior="" direction="">
+        <img src="Screenshot_2024-10-16-17-54-16-196_com.facebook.katana.png" alt="">
+        <img src="9551ec8c687257ea7ceb2c06e2b54dc6.jpg" alt="">
+        <img src="Snapchat-790215243.jpg" alt="">
+        <img src="85e0014a72a9f75f3f7406735cf36e91.jpg" alt="">
+        <img src="Snapchat-1322785787.jpg" alt="">
+        <img src="d844e8912b7e7c09f4c18cd6e6124ba8.jpg" alt="">
+
+    </marquee>
+    
+
+    <nav>
+        <a href="1.html" onclick="showPage('page1')">INICIO</a>
+        <a href="wiffo.html" onclick="showPage('page3')">WI-FI</a>
+        <a href="redes.html" onclick="showPage('page3')">Redes Inalambricas personales </a>
+
+    </nav>
+
+    <div id="page1" class="page"></div>
+    <div id="page2" class="page page-right"></div>
+    <div id="page3" class="page page-right"></div>
+
+    <script>
+        function showPage(pageId) {
+            document.querySelectorAll('.page').forEach(page => {
+                if (page.id === pageId) {
+                    page.classList.remove('page-left', 'page-right');
+                } else {
+                    page.classList.add('page-left');
+                }
+            });
+        }
+
+
+        showPage('page1');
+    </script>
+
+
+
+</body>
+</html>

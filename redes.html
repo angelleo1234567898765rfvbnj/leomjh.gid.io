@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="redes.css">
+</head>
+<body>
+    
+    <video autoplay muted loop class="bg-video">
+        <source src="Video para tu fondo de pantalla.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video>
+
+    <center><h1>Redes Inalambricas personales (PAN)</h1></center>
+<h2>Una red inalámbrica personal (PAN) es una red de
+comunicación que conecta dispositivos electrónicos
+a corta distancia, generalmente dentro de un radio de
+10 metros.</h2>
+<h1>Tipos de PAN</h1>
+<h2>1.
+*Bluetooth*: Utiliza la frecuencia de 2,4 GHz y tiene
+un alcance de hasta 100 metros.
+2.
+*Wi-Fi Direct*: Utiliza la frecuencia de 2,4 GHz y
+tiene un alcance de hasta 100 metros.
+3.
+*Infrarrojos (IR)*: Utiliza la frecuencia de luz
+infrarroja y tiene un alcance de hasta 1 metro.
+4.
+*Ultra Wideband (UWB)*: Utiliza la frecuencia de 3,1
+a 10,6 GHz y tiene un alcance de hasta 100 metros.
+5.
+*NFC (Near Field Communication)*: Utiliza la
+frecuencia de 13,56 MHz y tiene un alcance de hasta
+10 centímetros.</h2>
+<h1>Características</h1>
+<h2>1.
+*Alcance*: Corto alcance, generalmente dentro de
+un radio de 10 metros.
+2.
+*Velocidad*: Varía según la tecnología, desde 1
+Mbps hasta 1 Gbps.
+3.
+*Seguridad*: Varía según la tecnología, desde
+autenticación básica hasta cifrado avanzado.
+4.
+*Consumo de energía*: Bajo consumo de energía,
+ideal para dispositivos portátiles.</h2>
+<h1>Dispositivos compatibles</h1>
+<h2>1. Teléfonos inteligentes
+2. Computadoras portátiles
+3. Tabletas
+4. Auriculares
+5. Altavoces
+6. Impresoras
+7. Cámaras</h2>
+<h1>Ventajas</h1>
+<h2>1. Conectividad inalámbrica
+2. Facilidad de uso
+3. Bajo costo
+4. Consumo de energía bajo</h2>
+<h1>Desventajas</h1>
+<h2>1. Interferencia de señal
+2. Seguridad limitada
+3. Velocidad variable
+4. Alcance limitado</h2>
+
+<marquee behavior="" direction="">
+    <img src="20c03a22c15dc4beb345cbecd29befe1.jpg" alt="">
+    <img src="7fac977eebfbe022135245353c284a4f.jpg" alt="">
+    <img src="5dde32e691d3070291d28dbeb1fe41f6.jpg" alt="">
+    <img src="04ee483ce98f9a58c6bf0944fe68ec67.jpg" alt="">
+    <img src="d711467072906b996ededd5a9dd1bdd8.jpg" alt="">
+    <img src="db2ae5ee546c8f4c8f91843e18551a5e.jpg" alt="">
+</marquee>
+    
+
+<nav>
+    <a href="1.html" onclick="showPage('page1')">INICIO</a>
+    <a href="wiffo.html" onclick="showPage('page3')">WI-FI</a>
+    <a href="blouu.html" onclick="showPage('page2')">Bluetooth</a>
+
+</nav>
+
+<div id="page1" class="page"></div>
+<div id="page2" class="page page-right"></div>
+<div id="page3" class="page page-right"></div>
+
+<script>
+    function showPage(pageId) {
+        document.querySelectorAll('.page').forEach(page => {
+            if (page.id === pageId) {
+                page.classList.remove('page-left', 'page-right');
+            } else {
+                page.classList.add('page-left');
+            }
+        });
+    }
+
+
+    showPage('page1');
+</script>
+
+
+
+
+</body>
+</html>

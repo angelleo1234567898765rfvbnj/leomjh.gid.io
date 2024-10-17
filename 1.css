@@ -1,0 +1,133 @@
+body{
+    background-color: black;
+}
+
+h1{
+    font-size: 50px;
+}
+
+
+@keyframes waterEffect {
+    0% {
+        color: #3498db;
+        text-shadow: 0 0 5px #3498db, 0 0 10px #3498db;
+    }
+    50% {
+        color: #2980b9;
+        text-shadow: 0 0 10px #2980b9, 0 0 20px #2980b9;
+    }
+    100% {
+        color: #3498db;
+        text-shadow: 0 0 5px #3498db, 0 0 10px #3498db;
+    }
+}
+
+h1 {
+    animation: waterEffect 3s infinite
+}
+     
+    
+body {
+    font-family: Arial, sans-serif;
+    transition: opacity 1s ease-in-out;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+nav {
+    background-color: transparent;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: url(1729120190447.webp);
+    color: black;
+}
+
+.hover-effect {
+    color: black;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-bottom-color 0.3s;
+}
+
+.hover-effect:hover {
+    color: paleturquoise; 
+    background: url(1729120190447.webp)s;
+}
+
+
+
+.bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+@keyframes waterEffect {
+    0% {
+        color: #3498db;
+        text-shadow: 0 0 5px #3498db, 0 0 10px #3498db;
+    }
+    50% {
+        color: #2980b9;
+        text-shadow: 0 0 10px #2980b9, 0 0 20px #2980b9;
+    }
+    100% {
+        color: #3498db;
+        text-shadow: 0 0 5px #3498db, 0 0 10px #3498db;
+    }
+}
+
+a {
+    animation: waterEffect 3s infinite
+}
+
+h1{
+    animation: qw 5s infinite;
+}
+
+@keyframes qw{
+    0%{
+        text-shadow: 0 0  30px aqua, 0 0 30px aqua, 0 0 30px aqua ;
+    }
+    50%{
+        text-shadow: 0 0  30px white, 0 0 30px white, 0 0 30px white;
+    }
+    100%{
+        text-shadow: 0 0  30px pink, 0 0 30px pink, 0 0 30px pink ;
+    }
+}
+
+h2{
+    animation: qw 5s infinite;
+}
+
+h2{
+    color: aliceblue;
+    font-size: 30px;
+}

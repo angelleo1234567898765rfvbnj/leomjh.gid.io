@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="wifii.css">
+</head>
+<body bgcolor="black">
+    <video autoplay muted loop class="bg-video">
+        <source src="global network background animation.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video>
+
+    <center><h1 class="hover-effect">WI-FI</h1></center>
+
+    <h2><center><h1>¿Qué es Wi-Fi?</h1></center>
+        
+        Wi-Fi es una tecnología de red inalámbrica que
+        permite la conexión a Internet y la comunicación entre
+        dispositivos sin la necesidad de cables. Utiliza ondas
+        de radio para transmitir datos entre dispositivos.
+        <br>
+        <center><h1>Historia de Wi-Fi</h1></center>
+        <br>
+        - 1990: La IEEE (Instituto de Ingenieros Eléctricos y
+        Electrónicos) crea el estándar 802.11 para redes
+        inalámbricas.
+        - 1997: Se lanza el primer producto Wi-Fi comercial.
+        - 1999: Se crea la Alianza Wi-Fi (Wi-Fi Alliance) para
+        promover el estándar.
+        - 2001: Se lanza el estándar 802.11b, que aumenta la
+        velocidad y el alcance.
+        - 2009: Se lanza el estándar 802.11n, que ofrece
+        velocidades más rápidas y mayor alcance.
+        - 2013: Se lanza el estándar 802.11ac, que ofrece
+        velocidades aún más rápidas.
+        - 2019: Se lanza el estándar 802.11ax (Wi-Fi 6), que
+        ofrece velocidades y capacidad mejoradas.
+        <br>
+        <center><h1>Dispositivos compatibles</h1></center>
+        <br>
+        - Computadoras portátiles
+        - Teléfonos inteligentes
+        - Tabletas
+        - Smart TV
+        - Consolas de juegos
+        - Routers
+        - Puntos de acceso
+        <br>
+        <center><h1>Ventajas de Wi-Fi</h1></center>
+        <br>
+        - Conectividad inalámbrica
+        - Movilidad
+        - Facilidad de uso
+        - Costo efectivo
+        <br>
+        <center><h1>Desventajas de Wi-Fi</h1></center>
+        <br>
+        - Interferencia de señal
+        - Seguridad
+        - Velocidad variable
+        - Alcance limitado</h2>
+
+
+        <marquee behavior="" direction="">
+            <img src="3665f6c110ed8c0b1bd7120ba516995f.jpg" alt="">
+            <img src="concepto-de-wifi-con-el-hombre-joven-en-la-noche-140407238.jpg" alt="">
+            <img src="5810d94c61a03e96be5e6b3c2a235789.jpg" alt="">
+            <img src="depositphotos_565747940-stock-photo-wifi-mobile-communication-wireless-network.jpg" alt="">
+            <img src="1480263edb3eb80ab23f87f26248ade0.jpg" alt="">
+            <img src="coleccion-letreros-wifi-gratis-luz-neon_23-2148183935.jpg" alt="">
+        </marquee>
+
+
+        <nav>
+            <a href="1.html" onclick="showPage('page1')">INICIO</a>
+            <a href="blouu.html" onclick="showPage('page2')">Bluetooth</a>
+            <a href="redes.html" onclick="showPage('page3')">Redes Inalambricas personales </a>
+        </nav>
+    
+        <div id="page1" class="page"> <!-- Contenido de la Página 1 --></div>
+        <div id="page2" class="page page-right"> <!-- Contenido de la Página 2 --></div>
+        <div id="page3" class="page page-right"> <!-- Contenido de la Página 3 --></div>
+    
+        <script>
+            function showPage(pageId) {
+                document.querySelectorAll('.page').forEach(page => {
+                    if (page.id === pageId) {
+                        page.classList.remove('page-left', 'page-right');
+                    } else {
+                        page.classList.add('page-left');
+                    }
+                });
+            }
+    
+            // Mostrar la primera página al cargar
+            showPage('page1');
+        </script>
+    
+</body>
+</html>
